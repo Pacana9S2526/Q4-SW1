@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Seatwork 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BOOTSTRAP-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="text-center">
+    <div class="container p-5 mt-5 bg-light text-dark center rounded-3">
+        <h1>Account Log In</h1>
+        <p>Enter your credentials</p>
+        <details ontoggle="alert('TEST CREDENTIALS: \nUser: admin \nPass: 12345')">
+        <summary class="btn btn-sm btn-outline-secondary mb-3">View Login Help</summary>
+        <p class="small text-muted">Enter the credentials shown in the alert box.</p>
+        </details>
+        <hr>
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="UserName" name="username" placeholder="Enter your username">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+        <div class="feedback" id="loginStatus"></div>
+        <hr>
+        <button type="button" class="btn btn-primary" onclick="checkLogin()">Log In</button>
+        <button type="button" class="btn btn-secondary" onclick="location.reload()">REFRESH</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
